@@ -33,35 +33,34 @@
         width: 100%;
     }
 
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
+     thead {
+        /* Прячем заголовки */
+        display: none;
     }
 
     tr {
         margin-bottom: 15px;
-        border-bottom: 2px solid #eee;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
     }
 
     td {
-        border: none;
-        position: relative;
         padding-left: 50%;
+        position: relative;
+        text-align: left;
         font-size: 0.9rem;
-        text-align: right;
+        white-space: normal;
     }
 
     td::before {
-        position: absolute;
-        top: 10px;
-        left: 15px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        font-weight: 600;
-        text-align: left;
         content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        top: 12px;
+        font-weight: 600;
+        white-space: nowrap;
     }
 }
 

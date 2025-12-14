@@ -43,6 +43,7 @@ nav ul {
     padding: 0;                /* убираем внутренние отступы */
     margin: 15px 0 0;          /* внешний отступ сверху 15px */
     display: flex;             /* включаем флекс для горизонтального расположения */
+    flex-diraction: row;
     gap: 25px;                 /* отступы между пунктами меню */
 }
 
@@ -146,7 +147,7 @@ th, td {
 .gallery-grid {
     display: grid;             /* создаём сетку для галереи */
     grid-template-columns: repeat(3, 1fr); /* 3 колонки равной ширины */
-    gap: 25px;                 /* расстояния между элементами */
+    gap: 20px;                 /* расстояния между элементами */
 }
 
 main section figure {
@@ -157,10 +158,10 @@ main section figure {
     transition: transform 0.3s;
 }
 
-main section img {
+.gallery-grid img {
     width: 100%;               /* изображение во всю ширину */
     height: 220px;             /* фиксированная высота */
-    object-fit: cover;         /* обрезка без искажения */
+    display: block;
 }
 
 main figcaption {

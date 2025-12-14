@@ -34,10 +34,10 @@
     }
 
      thead {
-        /* Прячем заголовки */
-        display: none;
-        color: #3c7777;
-    }
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
 
     tr {
         margin-bottom: 15px;

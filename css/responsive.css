@@ -13,13 +13,15 @@
 
 @media (max-width: 768px) {
     /* При ширине экрана 768px и меньше меняем направление флекс-контейнера с рядного на колонку */
-    .cards {
-        gap: 10px;
+        .cards {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
     }
 
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
+    .card {
+        flex: 1 1 100%; /* одна карточка в ряд */
+        max-width: 100%;
     }
 
     header, main, footer {
@@ -52,5 +54,17 @@
     header, main, footer {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .card p, .card ul {
+        font-size: 0.9rem;
     }
 }

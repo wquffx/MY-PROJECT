@@ -28,6 +28,41 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #eee;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        font-size: 0.9rem;
+        text-align: right;
+    }
+
+    td::before {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: 600;
+        text-align: left;
+        content: attr(data-label);
+    }
 }
 
 

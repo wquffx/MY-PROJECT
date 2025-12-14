@@ -11,20 +11,21 @@
     .cards{
         flex-direction: column;
     }
-}
-
-
-@media (max-width: 768px) {
-    header, main, footer{
+        header, main, footer{
         padding-left: 15px;
         padding-right: 15px;
     }
 }
+
 
 @media (max-width: 480px) {
     /* При ширине экрана 480px и меньше меняем направление списка навигации на вертикальное */
     nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+        .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

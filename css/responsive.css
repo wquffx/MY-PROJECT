@@ -36,6 +36,7 @@
      thead {
         /* Прячем заголовки */
         display: none;
+        color: #3c7777;
     }
 
     tr {

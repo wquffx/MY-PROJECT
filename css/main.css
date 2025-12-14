@@ -112,11 +112,14 @@ th, td {
     display: flex;             /* гибкое расположение карточек в ряд */
     gap: 20px;                 /* расстояние между карточками */
     flex-wrap: wrap;           /* перенос карточек на следующую строку при необходимости */
+    justify-content: center;
 }
 
 .card {
+    flex: 1 1 300px;
+    max-width: 400px;
+    box-sizing: border-box;
     background: var(--card-bg); /* фон карточки */
-    width: 300px;               /* фиксированная ширина */
     border-radius: 12px;        /* скругление углов */
     overflow: hidden;           /* скрыть выходящий за границы контент */
     box-shadow: 0 8px 20px rgba(0,0,0,0.12); /* тень для эффекта подъёма */
@@ -124,21 +127,24 @@ th, td {
 }
 
 .card:hover {
-    transform: translateY(-8px); /* плавный подъём карточки при наведении */
+    transform: translateY(-7px); /* плавный подъём карточки при наведении */
 }
 
 .card img {
     width: 100%;/* изображение занимает всю ширину */
     height: 200px;             /* фиксированная высота */
+    display: block;
     object-fit: cover;         /* обрезка без искажения */
 }
 
 .card h3 {
-    padding: 15px 15px 0;      /* отступ сверху и по бокам для заголовка */
+    margin: 15px;
+    font-size: 1.2rem;
 }
 
 .card p, .card ul {
-    padding: 0 15px 15px;      /* отступы для текста и списков в карточке */
+    margin: 0 15px 15px 15px;      /* отступы для текста и списков в карточке */
+    font-size: 1rem;
 }
 
 

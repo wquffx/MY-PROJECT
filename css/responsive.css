@@ -1,17 +1,28 @@
 @media (max-width: 1024px) {
     /* При ширине экрана 1024px и меньше меняем сетку галереи на 2 колонки */
+        .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .gallery-grid {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 }
 
 @media (max-width: 768px) {
     /* При ширине экрана 768px и меньше меняем направление флекс-контейнера с рядного на колонку */
-    .cards{
-        flex-direction: column;
+    .cards {
+        gap: 10px;
     }
-        header, main, footer{
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    header, main, footer {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -21,12 +32,25 @@
 @media (max-width: 480px) {
     /* При ширине экрана 480px и меньше меняем направление списка навигации на вертикальное */
     nav ul {
+        display: flex;
         flex-direction: column;
         gap: 10px;
+        padding: 0;
+        margin: 10px 0 0;
+        list-style: none;
     }
-        .gallery-grid {
-        display: flex;          
-        gap: 25px;                 
-        flex-wrap: wrap; 
+    
+    .cards {
+        gap: 8px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    header, main, footer {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

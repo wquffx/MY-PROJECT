@@ -1,8 +1,9 @@
 @media (max-width: 1024px) {
     /* При ширине экрана 1024px и меньше меняем сетку галереи на 2 колонки */
     .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;             
+        gap: 25px;                 
+        flex-wrap: wrap; 
     }
 }
 

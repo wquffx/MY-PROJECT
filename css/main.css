@@ -14,7 +14,7 @@
 }
 
 body {
-    padding: 0 15px;
+    padding: 0;
     box-sizing: border-box;
     margin: 0;                /* убираем отступы по умолчанию */
     font-family: "Segoe UI", Arial, sans-serif; /* шрифт для комфортного чтения */

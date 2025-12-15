@@ -14,6 +14,8 @@
 }
 
 body {
+    padding: 0 15px;
+    box-sizing: border-box;
     margin: 0;                /* убираем отступы по умолчанию */
     font-family: "Segoe UI", Arial, sans-serif; /* шрифт для комфортного чтения */
     background: var(--bg-color); /* задаём фоновый цвет страницы */
